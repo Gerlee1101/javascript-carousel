@@ -5,10 +5,10 @@ const images = document.querySelectorAll(".slide");
 let i = 0;
 
 prevBtn.addEventListener("click", () => {
+  slides.style.transform = `translateX(-${i * 450}px)`;
   i++;
-  slides.style.transform = `translateX(-${i * 410}px)`;
 });
 nextBtn.addEventListener("click", () => {
   i--;
-  slides.style.transform = `translateX(-${i * 410}px)`;
+  slides.style.transform = `translateX(-${i * 450}px)`;
 });

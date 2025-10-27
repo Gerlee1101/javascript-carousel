@@ -14,7 +14,7 @@
   /* border: 2px solid black; */
 }
 .carousel {
-  width: 1200px;
+  width: 1350px;
   height: 600px;
   border: 2px solid red;
   position: absolute;
@@ -28,7 +28,7 @@
   border: 2px solid blue;
   display: flex;
   transition: transform 0.5s linear;
-  gap: 10px;
+  gap: 50px;
 }
 .slide {
   width: 400px;
@@ -107,7 +107,8 @@ a:hover {
   background-image: url("charles-etoroma-95UF6LXe-Lo-unsplash.jpg");
   background-size: cover;
 }
-.scale {
-  transform: scale(20%);
+.zoom-in {
+  transform: scale(150%);
+  z-index: 10;
   opacity: 1;
 }
