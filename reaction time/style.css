@@ -4,7 +4,6 @@
 }
 .container {
   width: 100vw;
-  display: flex;
 }
 .section {
   width: 100%;
@@ -15,12 +14,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 .header {
   color: white;
   top: 500px;
   /* padding-bottom: 600px; */
-  text-align: center;
 }
 .text {
   width: auto;
@@ -30,19 +29,24 @@
   align-items: center;
   justify-content: center;
   font-size: 100px;
+  color: white;
 }
 button {
-  width: 200px;
-  height: 50px;
+  padding: 6px 12px;
   border-radius: 16px;
   border: none;
   cursor: pointer;
-  margin-left: 800px;
-  background: #b43a63;
+  width: fit-content;
   background: linear-gradient(
     90deg,
     rgba(180, 58, 99, 1) 0%,
     rgba(253, 29, 29, 1) 47%,
     rgba(252, 176, 69, 1) 100%
   );
+}
+.text-small {
+  font-size: 18px;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 400;
 }
