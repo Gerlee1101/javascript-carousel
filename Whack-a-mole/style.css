@@ -22,6 +22,7 @@ body {
   height: fit-content;
   display: grid;
   grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
   gap: 10px;
   /* border: 1px solid black; */
   padding: 10px;
@@ -44,8 +45,9 @@ body {
   height: auto;
   position: absolute;
   left: 50px;
-  bottom: 30px;
+  bottom: 0px;
   top: 100%;
+  transition: top, 0.3s;
 }
 
 .hole img:nth-of-type(2) {
@@ -64,4 +66,8 @@ button {
   padding: 6px 10px;
   width: fit-content;
   font-size: 12px;
+  background-color: aqua;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
 }

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .container {
+} */
+.section {
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+  text-align: center;
+}
+.cell {
+  border: 4px black solid;
+  font-size: 200px;
+}
