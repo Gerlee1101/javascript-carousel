@@ -9,8 +9,18 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* .container {
-} */
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.container h1 {
+  font-size: 100px;
+  color: rgb(35, 184, 233);
+}
+
 .section {
   width: 600px;
   height: 600px;
@@ -20,6 +30,18 @@ body {
   text-align: center;
 }
 .cell {
-  border: 4px black solid;
-  font-size: 200px;
+  border: 2px black solid;
+  font-size: 150px;
+  box-shadow: 0 0 0 2px;
+  line-height: 180px;
+  font-weight: 400;
+  font-family: "Permanent Marker", cursive;
+}
+button {
+  padding: 6px 8px;
+  font-size: 18px;
+  width: fit-content;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
