@@ -1,10 +1,26 @@
 const cells = document.querySelectorAll(".cell");
-const resetBtn = document.querySelector(".resetButton");
+const resetBtn = document.querySelector("#resetButton");
+let text=document.querySelector(".text-box");
+
 let turn = "X";
-let isClicked = false;
 cells.forEach((cell) => {
   cell.addEventListener("click", () => {
-    cell.textContent = turn;
-    turn = turn === "X" ? "O" : "X";
+    if(cell.textContent!=="")
+      return;
+ cell.textContent = turn;
+ text.style.top="30px"
+ render();
+    if(cell==="X"||"0"){
+          turn = turn === "X" ? "O" : "X";
+          render();
+    }
   });
+});
+const render = () => {
+  cells.forEach((cell)=>{
+text.textContent=`Turn: ${turn}`;
+});
+}
+resetBtn.addEventListener("click", ()=>{
+cells.forEach(cell=>(cell.textContent=""));
 });
