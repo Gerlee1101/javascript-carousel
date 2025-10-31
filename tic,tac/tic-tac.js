@@ -41,7 +41,6 @@ for (let i = 0; i < squares.length; i++) {
     }
   });
 }
-
 function checkWin(currentPlayer) {
   for (let i = 0; i < winning_combinations.length; i++) {
     const [a, b, c] = winning_combinations[i];
